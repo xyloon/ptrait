@@ -1,6 +1,6 @@
 
 
-class TraitWith():
+class TraitExtends():
     traitmark = "__traitmark__"
 
     @classmethod
@@ -9,7 +9,7 @@ class TraitWith():
         return target_method
 
     @classmethod
-    def define(cls, *traits):
+    def override(cls, *traits):
         def define_decorator(target_cls):
             for tr in traits:
                 for elem_name in dir(tr):

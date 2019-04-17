@@ -1,8 +1,8 @@
 from setuptools import find_packages, setup
-
+from ptrait import __version__
 
 setup(name='ptrait',
-      version='0.0.1',
+      version=__version__,
       description='trait',
       long_description='',
       url='https://github.com/xyloon/ptrait',
