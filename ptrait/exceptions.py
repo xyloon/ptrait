@@ -4,3 +4,7 @@ class ParamError(Exception):
 
 class NamedParamsNotExist(ParamError):
     pass
+
+
+class MethodDefinitionError(Exception):
+    pass
