@@ -1,0 +1,4 @@
+alias pippkg_build='rm -rf dist && python3 setup.py sdist bdist_wheel'
+alias pippkg_testupload='python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*'
+alias pippkg_realupload='python3 -m twine upload dist/*'
+alias piptest='python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps'
